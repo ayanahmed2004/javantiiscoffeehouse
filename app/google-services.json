@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "65606372180",
+    "project_id": "javantiiscoffeehouse",
+    "storage_bucket": "javantiiscoffeehouse.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65606372180:android:ebe1222793d230027796c1",
+        "android_client_info": {
+          "package_name": "com.example.javantiiscoffeehouse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFwh_hajIKRQLFa42WO6tauAACYdRPe2Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
