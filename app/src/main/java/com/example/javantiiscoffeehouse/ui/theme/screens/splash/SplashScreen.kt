@@ -1,7 +1,6 @@
 package com.example.javantisassociation.ui.theme.screens.splash
 
 import android.annotation.SuppressLint
-import android.media.Image
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -22,7 +21,6 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.layout.ModifierLocalBeyondBoundsLayout
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextAlign
@@ -31,10 +29,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
-import com.example.javantisassociation.R
+import com.example.javantiiscoffeehouse.R
 import com.example.javantisassociation.ui.theme.PurpleGrey40
 import com.example.javantisassociation.ui.theme.NewOrange
-import com.example.sellapy.navigation.ROUT_HOME
+import com.example.javantiiscoffeehouse.navigation.ROUT_HOME
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 

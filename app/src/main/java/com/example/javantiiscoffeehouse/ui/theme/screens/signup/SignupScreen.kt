@@ -38,8 +38,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
+import com.example.javantiiscoffeehouse.R
 import com.example.javantiiscoffeehouse.navigation.ROUT_HOME
-import com.example.javantisassociation.R
 import com.example.javantisassociation.ui.theme.NewOrange
 
 
@@ -47,14 +47,14 @@ import com.example.javantisassociation.ui.theme.NewOrange
 fun SignupScreen(navController: NavController){
     Column(modifier= Modifier
         .fillMaxSize()
-        .paint(painterResource(id = R.drawable.profile), contentScale = ContentScale.FillBounds),
+        .paint(painterResource(id = R.drawable.coffeecups), contentScale = ContentScale.FillBounds),
         horizontalAlignment = Alignment.CenterHorizontally
     ){
 
 
 
         Image(
-            painterResource(id = R.drawable.home),
+            painterResource(id = R.drawable.java),
             contentDescription = "product",
             modifier = Modifier.size(200.dp)
         )
@@ -62,18 +62,19 @@ fun SignupScreen(navController: NavController){
         Spacer(modifier = Modifier.height(10.dp))
 
         Text(
-            text = "Javantis coffee association",
-            fontSize = 40.sp,
-            fontFamily = FontFamily.Cursive,
-            color = Color.Black
+            text = "Javantiis coffee house",
+            fontSize = 60.sp,
+            fontFamily = FontFamily.SansSerif,
+            color = Color.Cyan
         )
 
         Spacer(modifier = Modifier.height(10.dp))
 
         Text(
             text = "Do not have an account? Create account",
-            fontSize = 20.sp,
-            fontFamily = FontFamily.SansSerif,
+            fontSize = 25.sp,
+            fontFamily = FontFamily.Serif,
+            color = Color.Black
 
             )
 
@@ -91,7 +92,7 @@ fun SignupScreen(navController: NavController){
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(start = 10.dp, end = 10.dp),
-            leadingIcon = { Icon(imageVector = Icons.Default.Person, contentDescription = "", tint = NewOrange) },
+            leadingIcon = { Icon(imageVector = Icons.Default.Person, contentDescription = "", tint = Color.Cyan) },
             label = { Text(text = "Fullname")},
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text)
         )
@@ -103,8 +104,8 @@ fun SignupScreen(navController: NavController){
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(start = 10.dp, end = 10.dp),
-            leadingIcon = { Icon(imageVector = Icons.Default.Email, contentDescription = "", tint = NewOrange) },
-            label = { Text(text = "Email Address")},
+            leadingIcon = { Icon(imageVector = Icons.Default.Email, contentDescription = "", tint = Color.Cyan) },
+            label = { Text(text = "Home Address")},
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email)
         )
         Spacer(modifier = Modifier.height(10.dp))
@@ -115,7 +116,7 @@ fun SignupScreen(navController: NavController){
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(start = 10.dp, end = 10.dp),
-            leadingIcon = { Icon(imageVector = Icons.Default.Lock, contentDescription = "", tint = NewOrange) },
+            leadingIcon = { Icon(imageVector = Icons.Default.Lock, contentDescription = "", tint = Color.Cyan) },
             label = { Text(text = "Password")},
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
             visualTransformation = PasswordVisualTransformation()
@@ -128,23 +129,11 @@ fun SignupScreen(navController: NavController){
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(start = 10.dp, end = 10.dp),
-            leadingIcon = { Icon(imageVector = Icons.Default.Lock, contentDescription = "", tint = NewOrange) },
+            leadingIcon = { Icon(imageVector = Icons.Default.Lock, contentDescription = "", tint = Color.Cyan) },
             label = { Text(text = "ConfPassword")},
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text)
         )
-        Spacer(modifier = Modifier.height(20.dp))
 
-
-
-        Button(
-            onClick = { navController.navigate(ROUT_HOME) },
-            colors = ButtonDefaults.buttonColors(NewOrange),
-            shape = RoundedCornerShape(10.dp),
-        ){
-
-            Text(text = "Create an account")
-
-        }
         Spacer(modifier = Modifier.height(10.dp))
 
 
@@ -152,8 +141,22 @@ fun SignupScreen(navController: NavController){
             text = "Already have an account? Login",
             fontSize = 20.sp,
             fontFamily = FontFamily.SansSerif,
+            color = Color.Magenta
 
             )
+        Spacer(modifier = Modifier.height(20.dp))
+
+
+
+        Button(
+            onClick = { navController.navigate(ROUT_HOME) },
+            colors = ButtonDefaults.buttonColors(Color.DarkGray),
+            shape = RoundedCornerShape(10.dp),
+        ){
+
+            Text(text = "Order Now")
+
+        }
 
 
 
