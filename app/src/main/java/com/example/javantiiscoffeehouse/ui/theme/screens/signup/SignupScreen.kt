@@ -129,7 +129,7 @@ fun SignupScreen(navController: NavController){
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(start = 10.dp, end = 10.dp),
-            leadingIcon = { Icon(imageVector = Icons.Default.Lock, contentDescription = "", tint = Color.Cyan) },
+            leadingIcon = { Icon(imageVector = Icons.Default.Lock, contentDescription = "", tint = Color.Cyan ) },
             label = { Text(text = "ConfPassword")},
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text)
         )
